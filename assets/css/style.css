@@ -1,0 +1,459 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+body{
+    overflow: hidden;
+    background-color:white;
+}
+
+.maincontainer{
+    height:140vh;
+    width: 100vw;
+    overflow: hidden; 
+}
+
+.container {
+    height:70vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color:#6610f2;
+    position:relative;
+}
+
+html{
+    font-size:62.5%;
+    overflow-y: scroll;
+}
+
+
+.container header .navbar {
+    position: absolute;
+    top:10px;
+    right:10px;
+    width:70rem;
+} 
+
+.container header .navbar ul{
+list-style-type: none;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.container header .navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+.container header .navbar ul .active,
+.container header .navbar ul li a:hover {
+    /* border: .2rem solid red;
+    border-radius: 5rem;
+    padding: 0 3rem; */
+    color:aqua;
+    cursor: pointer;
+}
+
+header .logo h1{
+    font-size: 4rem;
+    margin: 0;
+    padding: 1rem 2rem;
+    line-height: 1;
+    font-weight: 500;
+     letter-spacing: 2px; 
+    text-transform: uppercase;
+    font-family: "Jost", sans-serif;
+    color: white;
+}
+
+
+header .menu {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 3;
+    display: none;
+}
+header .menu i {
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.container header .navbar ul li a{
+    font-size: 2rem;
+    color:white;
+}
+
+.navbar .signup-btn{
+    cursor: pointer;
+    display: block;
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 1px solid #47b2e4;
+    padding: 10px 20px;
+}
+
+.navbar .signup-btn:hover{
+     background-color: #47b2e4; 
+
+}
+
+
+/* Section Part*/
+section{
+    height:80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section .content{
+    height: 40rem;
+    display: flex;
+    flex:1 0 1rem;
+    justify-content: center;
+    padding-left: 3rem;
+    flex-flow: column;
+}
+
+section .image{
+    display: flex;
+    align-self:center;
+    justify-content: center;
+     flex:1 0 1rem;
+}
+section .image >img {
+    height: 45rem;
+    animation: image 1s linear 1;
+    animation-delay: 1.5s;
+}
+
+@keyframes image{
+    from{
+        transform: translateY(-100px);
+    }
+}
+
+section .content h1{
+    font-size: 4rem;
+    margin: 1rem 0;
+    color: white;
+}
+
+section .content p {
+    font-size: 2.5rem;
+   color:grey;
+}
+
+section .content button{
+    height: 4.5rem;
+    width:20rem;
+    font-family: "Jost",
+    sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px 11px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 2rem;
+    color: #fff;
+    background: #47b2e4;
+    animation: button 1s linear 1;
+    animation-delay: 1.5s;
+}
+@keyframes image {
+    from {
+        transform: scale(0) rotateZ(45deg);
+    }
+}
+
+section .content button:hover{
+    opacity: 0.8;
+}
+
+section .content button a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+
+
+.btn-group {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.btn-group .signup-btn {
+    cursor: pointer;
+    display: block;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 32px;
+    background-color: #47b2e4;
+    padding: 15px 50px;
+}
+
+.btn-group .play-btn {
+    margin-left: 40px;
+    display: inline-flex;
+}
+
+.btn-group span {
+    font-size: 15px;
+    font-weight: 700;
+    margin: auto 20px;
+    cursor: pointer;
+}
+
+.play-btn-inner {
+    height: 50px;
+    width: 50px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    
+}
+
+.play-btn-inner i {
+    padding: 15px 19px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Logo Clients*/
+
+.clients{
+    margin:.1rem;
+    background-color:#f8f9fa;
+    /* color: #444444; */
+}
+
+.clients .row .column img{
+    width:90px;
+    margin:2rem;
+    
+}
+
+
+.clients .column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 100px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.clients .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ /* About US */
+ 
+.aboutuscontainer {
+    height: 120vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+}   
+.aboutuscontainer h2 {
+    font-size:32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #37517e;
+    text-align: center;
+}  
+
+.aboutuscontainer h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.aboutuscontainer h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #47b2e4;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.aboutuscontainer .about{
+    /* width:100%; */
+    display: flex;
+}
+
+.aboutuscontainer h2{
+    margin:2rem;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    
+}
+
+.aboutuscontainer .rightside p{
+    font-size: 2rem;
+    display: block;
+   margin: 4rem;
+}
+
+.aboutuscontainer .rightside li {
+    font-size: 2rem;
+    display: block;
+    margin: 4rem;
+}
+
+.aboutuscontainer .leftside p {
+    font-size: 2rem;
+    display: block;
+    margin: 4rem;
+}
+
+.aboutuscontainer .leftside .learn{
+    background-color:white;
+    color:#47b2e4;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border:2px solid #47b2e4;
+    margin: 4rem;
+}
+.aboutuscontainer .leftside .learn:hover{
+    background-color:#47b2e4;
+    color:white
+}
+
+/*Responsive part**/
+@media screen and (max-width:930px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+
+@media screen and (max-width:750px){
+    html{
+        font-size: 45%;
+    }
+
+    .maincontainer{
+        height:320vh;
+    }
+    
+    header .menu{
+        display: block;
+    }
+    .container header .navbar{
+        height: 100%;
+        width:100%;
+        top:0;
+        left:0;
+        display: none;
+    }
+    .container header .navbar ul{
+        height: 100%;
+        width: 100%;
+        flex-flow: column;
+        background: white;
+    }
+    .container header .navbar ul li a{
+        font-size: 3rem;
+        color:#6610f2
+    }
+    section{
+        flex-flow: column-reverse;
+    }
+    section .content{
+        padding: 0 4rem;
+        text-align: center;
+    }
+    section .content button{
+        margin:3rem auto;
+        height: 8rem;
+    }
+
+    .btn-group .signup-btn {
+        cursor: pointer;
+        display: block;
+        color: #000;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+        border-radius: 32px;
+        background-color: #47b2e4;
+        padding: 20px 40px;
+    }
+
+    .aboutuscontainer{
+        height:2000px;
+    }
+    
+    .aboutuscontainer .about{
+        display: block;
+    }
+
+    .aboutuscontainer .about .rightside p,
+    .aboutuscontainer .about .rightside li
+    {
+        font-size: 3rem;
+    }
+
+    .aboutuscontainer .about .leftside p,
+    .aboutuscontainer .about .leftside li {
+        font-size: 3rem;
+    }
+.clients .column{
+    width: 100%;  
+    text-align: center;
+}
+
+/* .clients .column img{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
+    
+
+
+}
+
+@media screen and (max-width:330px) {
+    section .image >img{
+        height: 35rem;
+    }
+}
+
+
+
